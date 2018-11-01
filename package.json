@@ -1,6 +1,6 @@
 {
   "name": "@mattune/fomula-css",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "style reset css",
   "main": "release/fomula.css",
   "scripts": {
