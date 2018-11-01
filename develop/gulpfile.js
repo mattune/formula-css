@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const watch = require('gulp-watch');
-const include = require('gulp-include');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 
