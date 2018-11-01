@@ -1,0 +1,19 @@
+{
+  "name": "@mattune/fomula-css",
+  "version": "1.0.0",
+  "description": "style reset css",
+  "main": "release/fomula.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattune/reset-css.git"
+  },
+  "author": "mattune",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattune/reset-css/issues"
+  },
+  "homepage": "https://github.com/mattune/reset-css#readme"
+}
