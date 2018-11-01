@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "style reset css",
   "main": "release/fomula.css",
+  "style": "release/fomula.css",
+  "sass": "develop/_sass/formula.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
