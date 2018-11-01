@@ -1,2 +1,2 @@
-# reset-css
+# formula-css
 style reset
