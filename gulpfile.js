@@ -9,9 +9,9 @@ const autoprefixer = require('gulp-autoprefixer');
  * path
  *************************************************/
 const paths = {
-  'scss': '_sass/**/*.scss', // scssファイルのパス
-  'exScss': '!_sass/**/_*.scss', // コンパイル除外するscssファイルのパス（_が付いたcssファイルは除外）
-  'css': '../release/', // cssコンパイル先のパス
+  'scss': 'develop/**/*.scss',
+  'exScss': '!develop/**/_*.scss',
+  'css': 'release/'
 };
 
 

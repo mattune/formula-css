@@ -17,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/mattune/reset-css/issues"
   },
-  "homepage": "https://github.com/mattune/reset-css#readme"
+  "homepage": "https://github.com/mattune/reset-css#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
