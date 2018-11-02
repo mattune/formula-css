@@ -1,23 +1,28 @@
 {
-  "name": "@mattune/fomula-css",
-  "version": "0.0.4",
+  "name": "fomula-css",
   "description": "style reset css",
-  "main": "release/fomula.css",
-  "style": "release/fomula.css",
-  "sass": "develop/_sass/formula.scss",
+  "version": "0.0.5",
+  "keywords": [
+    "css",
+    "sass",
+    "web"
+  ],
+  "homepage": "https://github.com/mattune/reset-css#readme",
+  "author": "mattune",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "style": "release/fomula.css",
+  "main": "release/fomula",
+  "sass": "develop/_sass/formula.scss",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mattune/reset-css.git"
   },
-  "author": "mattune",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mattune/reset-css/issues"
   },
-  "homepage": "https://github.com/mattune/reset-css#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
