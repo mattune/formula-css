@@ -2,4 +2,7 @@
 
 style reset
 
-npm install --save fomula-css
+```
+npm install --save formula-css
+```
+
