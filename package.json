@@ -1,7 +1,7 @@
 {
-  "name": "fomula-css",
+  "name": "formula-css",
   "description": "style reset css",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "keywords": [
     "css",
     "sass",
@@ -13,8 +13,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "style": "release/fomula.css",
-  "main": "release/fomula",
+  "style": "release/formula.css",
+  "main": "release/formula",
   "sass": "develop/_sass/formula.scss",
   "repository": {
     "type": "git",
