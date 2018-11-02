@@ -1,13 +1,13 @@
 {
   "name": "formula-css",
   "description": "style reset css",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "keywords": [
     "css",
     "sass",
     "web"
   ],
-  "homepage": "https://github.com/mattune/reset-css#readme",
+  "homepage": "https://github.com/mattune/formula-css#readme",
   "author": "mattune",
   "license": "MIT",
   "scripts": {
@@ -18,10 +18,10 @@
   "sass": "develop/_sass/formula.scss",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattune/reset-css.git"
+    "url": "git+https://github.com/mattune/formula-css.git"
   },
   "bugs": {
-    "url": "https://github.com/mattune/reset-css/issues"
+    "url": "https://github.com/mattune/formula-css/issues"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
