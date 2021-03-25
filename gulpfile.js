@@ -1,49 +1,45 @@
-const gulp = require('gulp');
-const plumber = require('gulp-plumber');
-const watch = require('gulp-watch');
-const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
-
+const { src, dest, watch, series, parallel } = require("gulp")
+const plumber = require("gulp-plumber")
+const sass = require("gulp-sass")
+const packageImporter = require("node-sass-package-importer")
+const autoprefixer = require("gulp-autoprefixer")
 
 /**************************************************
  * path
  *************************************************/
 const paths = {
-  'scss': 'develop/**/*.scss',
-  'exScss': '!develop/**/_*.scss',
-  'css': 'release/'
-};
-
-
+  scss: "develop/**/*.scss",
+  exScss: "!develop/**/_*.scss",
+  css: "release/",
+}
 
 /**************************************************
  * tasks
  *************************************************/
 // sass
-gulp.task('sass-compile', () => {
-  gulp.src([paths.scss, paths.exScss])
-    .pipe(plumber({
-      errorHandler: function (err) {
-        console.log(err.message);
-        this.emit('end');
-      }
-    }))
-    .pipe(sass({
-      outputStyle: 'compressed'
-    }))
-    .pipe(autoprefixer({
-      browsers: ['last 2 version'],
-      cascade: false
-    }))
-    .pipe(gulp.dest(paths.css));
-});
+const compileSass = (done) => {
+  src([paths.scss, paths.exScss])
+    .pipe(plumber())
+    .pipe(
+      sass({
+        outputStyle: "compressed",
+        importer: packageImporter({
+          extensions: [".scss", ".css"],
+        }),
+      })
+    )
+    .pipe(
+      autoprefixer({
+        cascade: false,
+      })
+    )
+    .pipe(dest(paths.css))
+  done() // 終了宣言
+}
 
+const watchFiles = () => {
+  watch(paths.scss, series(compileSass))
+}
 
-// watch
-gulp.task('watch', () => {
-  gulp.watch(paths.scss, ['sass-compile']);
-});
-
-
-// default
-gulp.task('default', ['watch']);
+exports.sass = compileSass
+exports.default = watchFiles
